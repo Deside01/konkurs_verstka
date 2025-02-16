@@ -18,27 +18,27 @@ a:hover {
   color: blue;
 }
 
-header {
+.header {
   position: absolute;
   top: 0;
   width: 100%;
   padding: 0.5%;
-  background-color: aqua;
+  background-color: rgb(247, 247, 247);
 }
 
-header nav ul {
+.header nav ul {
   display: flex;
   padding: 25px 0 0 0;
   list-style: none;
 }
 
-header nav ul li a {
+.header nav ul li a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
   font-weight: 600;
 }
 
-header nav ul li {
+.header nav ul li {
   margin: 0 30px 0 0;
 }
 
@@ -311,6 +311,82 @@ td {
   }
 }
 
+@media screen and (max-width: 1023px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .header_wrapper div img {
+    display: none;
+  }
+
+  .header_wrapper nav {
+    display: none;
+  }
+
+  .header_wrapper .burger {
+    position: fixed;
+  }
+
+  .burger:after,
+  .burger:before {
+    content: "";
+    width: 30px;
+    height: 4px;
+    background-color: #1f1e25;
+    position: absolute;
+    border-radius: 2px;
+  }
+
+  .burger:after {
+    top: 10px;
+  }
+
+  .burger:before {
+    bottom: 10px;
+  }
+
+  .burger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 20px 0 0 0;
+    border-radius: 2px;
+    background-color: #1f1e25;
+  }
+
+  .welcome_container .container h2 {
+    margin: 0;
+  }
+
+  .welcome_container video {
+    width: 100%;
+    display: block;
+  }
+
+  .konkurs-container h2 {
+    padding-bottom: 30px;
+  }
+
+  .enter_block {
+    display: none;
+  }
+
+  .header_wrapper {
+    display: block;
+  }
+
+  .header nav ul {
+    display: none;
+  }
+
+  .tabs label span {
+    display: none;
+  }
+}
+
 .search_wrapper {
   margin-top: -40px;
   margin-bottom: 30px;
@@ -330,4 +406,39 @@ td {
   text-align: left;
   align-self: center;
   margin: auto;
+}
+
+.footer {
+  background: var(--base_white);
+  padding: 50px 0;
+}
+
+.footer_wrapper,
+.footer_left,
+.footer_right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_logo {
+  width: 40%;
+}
+
+.footer_nav {
+  width: 50%;
+}
+
+.footer_nav ul li {
+  margin: 0 0 10px 0;
+}
+
+.footer_right .footer_phone {
+  width: 100%;
+  position: relative;
+}
+
+.desc_text {
+  color: #707c87;
+  font-size: 12px;
+  padding: 10px 0 0 0;
 }
