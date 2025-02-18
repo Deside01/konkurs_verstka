@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="star">
+        <path
+          d="M31.547 12a.848.848 0 00-.677-.577l-9.427-1.376-4.224-8.532a.847.847 0 00-1.516 0l-4.218 8.534-9.427 1.355a.847.847 0 00-.467 1.467l6.823 6.664-1.612 9.375a.847.847 0 001.23.893l8.428-4.434 8.432 4.432a.847.847 0 001.229-.894l-1.615-9.373 6.822-6.665a.845.845 0 00.214-.869z"
+        />
+      </symbol>
+    </svg>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header_wrapper">
+        <div>
+          <img src="./img/logo-svgrepo-com.svg" width="55" alt="" />
+        </div>
+        <div class="burger"></div>
+        <nav>
+          <ul>
+            <li><a href="#">Регистрация</a></li>
+            <li><a href="#">Авторизация</a></li>
+            <li><a href="#">Личный кабинет</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Конкурсы</a></li>
+            <li><a href="#">Поиск</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="enter_block">
+          <svg
+            width="20"
+            height="22"
+            viewBox="0 0 20 22"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="black"
+          >
+            <path
+              d="M2.222 14.3h2.222v5.5h13.334V2.2H4.444v5.5H2.222V1.1c0-.292.117-.572.326-.778.208-.206.49-.322.785-.322H18.89c.295 0 .577.116.786.322.208.206.325.486.325.778v19.8c0 .292-.117.572-.325.778a1.117 1.117 0 01-.786.322H3.333c-.294 0-.577-.116-.785-.322a1.095 1.095 0 01-.326-.778v-6.6zM8.89 9.9V6.6l5.555 4.4-5.555 4.4v-3.3H0V9.9h8.889z"
+            />
+          </svg>
+          <span>Войти в Интернет-банк</span>
+        </a>
+      </div>
+    </header>
+    <main>
+      <h1 class="h1_header">Регистрация</h1>
+      <form action="" method="post" class="registration-container container">
+        <div class="auth_wrapper">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div class="auth_wrapper">
+          <label for="name">Имя</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+
+        <div class="auth_wrapper">
+          <label for="surname">Фамилия</label>
+          <input type="text" name="surname" id="surname" required />
+        </div>
+
+        <div class="auth_wrapper">
+          <label for="age">Возраст</label>
+          <input type="number" name="age" id="age" required />
+        </div>
+
+        <div class="inline_block">
+          <label for="sex">Пол:</label>
+          <select class="selector" name="sex" id="sex-select">
+            <option value="m">Мужской</option>
+            <option value="f">Женский</option>
+          </select>
+        </div>
+
+        <div class="auth_wrapper">
+          <label for="password">Пароль</label>
+          <input type="password" name="password" id="password" required />
+        </div>
+
+        <div class="auth_wrapper">
+          <label for="confirm_password">Повтор пароля</label>
+          <input
+            type="password"
+            name="confirm_password"
+            id="confirm_password"
+            required
+          />
+        </div>
+
+        <div class="auth_wrapper">
+          <label for="img_file">Выберите семейное фото:</label>
+          <input
+            type="file"
+            name="img_file"
+            id="img_file"
+            accept="image/png, image/jpeg"
+            required
+          />
+        </div>
+
+        <div class="add_family">
+          <button class="button">+ Добавить члена семьи</button>
+        </div>
+
+        <div class="checkbox_block">
+          <input type="checkbox" name="agreement" id="agreement" required />
+          <label for="agreement"
+            >Согласие на обработку персональных данных</label
+          >
+        </div>
+
+        <div class="auth_wrapper">
+          <button class="button" type="submit" class="btn">
+            Зарегистрироваться
+          </button>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_wrapper">
+          <div class="footer_left">
+            <div class="footer_logo">
+              <img src="assets/image/svg/logo.svg" alt="Лига Банк" />
+              <a href="family@cosmos.ru" class="desc_text">family@cosmos.ru</a>
+            </div>
+            <nav class="footer_nav">
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная-светлая</a></li>
+                <li><a href="#">Регистрация</a></li>
+                <li><a href="#">Конкурс</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#">Страница не найден</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer_right">
+            <div class="footer_phone">
+              <a href="tel:74842234567">+7 (4842) 23-45-67</a>
+              <p class="desc_text">Бесплатный для всех городов России</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
