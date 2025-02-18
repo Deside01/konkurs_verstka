@@ -54,10 +54,11 @@
 /* TABS START */
 
 .tabs-container {
-  margin: 150px auto;
+  margin-top: 120px;
 }
 
 .tabs {
+  margin-top: 90px;
   display: flex;
   flex-wrap: wrap;
 }
